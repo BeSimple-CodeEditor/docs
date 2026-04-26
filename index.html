@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeSimple Docs | Developer Guide</title>
+
+    <!-- External Dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Application Styles -->
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">BeSimple <span>Docs</span></div>
+        <ul>
+            <li><a href="https://github.com/BeSimple-CodeEditor/docs" target="_blank"><i
+                        class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="#getting-started" class="nav-cta">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">Navigation</div>
+            <ul>
+                <li><a href="#introduction"><i class="fa-solid fa-house"></i> Introduction</a></li>
+                <li><a href="#features"><i class="fa-solid fa-star"></i> Features</a></li>
+                <li><a href="#structure"><i class="fa-solid fa-sitemap"></i> Structure</a></li>
+                <li><a href="#architecture"><i class="fa-solid fa-layer-group"></i> Architecture</a></li>
+                <li><a href="#api-reference"><i class="fa-solid fa-code"></i> API Reference</a></li>
+                <li><a href="#getting-started"><i class="fa-solid fa-rocket"></i> Getting Started</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div id="content-area">
+                <!-- Content will be loaded dynamically by ContentHandler -->
+                <div class="loader-placeholder">
+                    <div class="spinner"></div>
+                    <p>Loading documentation...</p>
+                </div>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 BeSimple CodeEditor Project • Build with Simplicity</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Application Logic -->
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
